@@ -3,21 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="changeRequestChaining.CreateChangeRequest">
+      <class name="incidentInvidual.LearningBodyAssertion">
         <methods>
-          <include name="CreateCR"/>
+          <include name="bodyAssertion"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- changeRequestChaining.CreateChangeRequest -->
-      <class name="changeRequestChaining.UpdateChangeRequest">
-        <methods>
-          <include name="updateCR"/>
-        </methods>
-      </class> <!-- changeRequestChaining.UpdateChangeRequest -->
-      <class name="changeRequestChaining.GetAllChangeRequest">
-        <methods>
-          <include name="getChangeRequest"/>
-        </methods>
-      </class> <!-- changeRequestChaining.GetAllChangeRequest -->
+      </class> <!-- incidentInvidual.LearningBodyAssertion -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

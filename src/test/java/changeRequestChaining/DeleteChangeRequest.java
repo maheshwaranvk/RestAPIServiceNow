@@ -13,7 +13,12 @@ public class DeleteChangeRequest extends BaseClassCR{
 		Response delete = RestAssured
 		.given()
 		.log().all()
-		.delete(sysID);
+		.delete(sysID)
+		.then()
+		.assertThat()
+		.statusCode(204)
+		.extract()
+		.response();
 		
 		System.out.println(delete.statusCode());
 

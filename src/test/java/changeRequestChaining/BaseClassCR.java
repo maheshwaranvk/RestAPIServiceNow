@@ -10,9 +10,10 @@ public class BaseClassCR {
 	
 	@BeforeSuite
 	public void baseClassChangeRequest() {
-RestAssured.baseURI="https://dev74847.service-now.com/api/now/table/change_request";
 		
+		RestAssured.baseURI="https://dev74847.service-now.com/api/now/table/change_request";
 		RestAssured.authentication=RestAssured.basic("admin", "India@123");
+		
 
 	}
 

@@ -15,15 +15,20 @@ public class GetAllChangeRequest extends BaseClassCR{
 	@Test(dependsOnMethods = {"changeRequestChaining.CreateChangeRequest.CreateCR"})
 	public void getChangeRequest() {
 	
-		Response response = RestAssured
+	RestAssured
 		.given()
 		.log().all()
 		.contentType(ContentType.JSON)
 		.queryParam("sysparm_fields", "number,sys_id,short_description")
 		.queryParam("sysparm_limit", "20")
-		.get(sysID);
 		
-		response.prettyPrint();
+		.get(sysID)
+		.then()
+		.assertThat()
+		.statusCode(200)
+		.extract()
+		.response()
+		.prettyPrint();
 		
 	//	List<String> list = response.jsonPath().getList("result.sys_id");
 		

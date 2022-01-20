@@ -19,8 +19,7 @@ public class PostIncidentUsingFile {
 		RestAssured.authentication = RestAssured.basic("admin", "India@123");
 		
 		 File file = new File("./data/PostIncident.json");
-		 
-		 
+		 	 
 		Response post = RestAssured
 		.given()
 		.contentType(ContentType.JSON)

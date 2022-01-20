@@ -19,6 +19,11 @@ public class CreateChangeRequest extends BaseClassCR{
 		.body("{\"short_description\": \"Created on 0820 File\",\"active\": \"true\"}")
 		.contentType(ContentType.JSON)
 		.post()
+		.then()
+		.assertThat()
+		.statusCode(201)
+		.extract()
+		.response()
 		.jsonPath()
 		.get("result.sys_id");
 

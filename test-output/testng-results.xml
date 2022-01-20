@@ -1,39 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="3" total="7" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-01-16T22:22:47 IST" name="Default suite" finished-at="2022-01-16T22:23:08 IST" duration-ms="20893">
+  <suite started-at="2022-01-20T11:45:32 IST" name="Default suite" finished-at="2022-01-20T11:45:39 IST" duration-ms="6473">
     <groups>
     </groups>
-    <test started-at="2022-01-16T22:22:47 IST" name="Default test" finished-at="2022-01-16T22:23:08 IST" duration-ms="20893">
-      <class name="changeRequestChaining.GetAllChangeRequest">
-        <test-method signature="getChangeRequest()[pri:0, instance:changeRequestChaining.GetAllChangeRequest@4a7f959b]" started-at="2022-01-16T22:22:54 IST" name="getChangeRequest" finished-at="2022-01-16T22:23:00 IST" depends-on-methods="changeRequestChaining.CreateChangeRequest.CreateCR" duration-ms="5465" status="PASS">
+    <test started-at="2022-01-20T11:45:32 IST" name="Default test" finished-at="2022-01-20T11:45:39 IST" duration-ms="6473">
+      <class name="incidentInvidual.LearningBodyAssertion">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:incidentInvidual.LearningBodyAssertion@662b4c69]" started-at="2022-01-20T11:45:32 IST" name="setUp" finished-at="2022-01-20T11:45:32 IST" duration-ms="427" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getChangeRequest -->
-      </class> <!-- changeRequestChaining.GetAllChangeRequest -->
-      <class name="changeRequestChaining.DeleteChangeRequest">
-        <test-method is-config="true" signature="baseClassChangeRequest()[pri:0, instance:changeRequestChaining.DeleteChangeRequest@4bb33f74]" started-at="2022-01-16T22:22:46 IST" name="baseClassChangeRequest" finished-at="2022-01-16T22:22:47 IST" duration-ms="975" status="PASS">
+        </test-method> <!-- setUp -->
+        <test-method signature="bodyAssertion()[pri:0, instance:incidentInvidual.LearningBodyAssertion@662b4c69]" started-at="2022-01-20T11:45:32 IST" name="bodyAssertion" finished-at="2022-01-20T11:45:39 IST" duration-ms="6453" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- baseClassChangeRequest -->
-        <test-method signature="deleteCR()[pri:0, instance:changeRequestChaining.DeleteChangeRequest@4bb33f74]" started-at="2022-01-16T22:23:04 IST" name="deleteCR" finished-at="2022-01-16T22:23:08 IST" depends-on-methods="changeRequestChaining.UpdateChangeRequest.updateCR" duration-ms="4251" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deleteCR -->
-      </class> <!-- changeRequestChaining.DeleteChangeRequest -->
-      <class name="changeRequestChaining.CreateChangeRequest">
-        <test-method signature="CreateCR()[pri:0, instance:changeRequestChaining.CreateChangeRequest@429bffaa]" started-at="2022-01-16T22:22:47 IST" name="CreateCR" finished-at="2022-01-16T22:22:54 IST" duration-ms="6950" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CreateCR -->
-      </class> <!-- changeRequestChaining.CreateChangeRequest -->
-      <class name="changeRequestChaining.UpdateChangeRequest">
-        <test-method signature="updateCR()[pri:0, instance:changeRequestChaining.UpdateChangeRequest@5403f35f]" started-at="2022-01-16T22:23:00 IST" name="updateCR" finished-at="2022-01-16T22:23:04 IST" depends-on-methods="changeRequestChaining.GetAllChangeRequest.getChangeRequest" duration-ms="4166" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- updateCR -->
-      </class> <!-- changeRequestChaining.UpdateChangeRequest -->
+        </test-method> <!-- bodyAssertion -->
+      </class> <!-- incidentInvidual.LearningBodyAssertion -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
