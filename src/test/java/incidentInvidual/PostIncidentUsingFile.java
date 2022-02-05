@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
+import io.restassured.module.jsv.JsonSchemaValidator;
 import io.restassured.response.Response;
 
 public class PostIncidentUsingFile {
@@ -24,7 +25,11 @@ public class PostIncidentUsingFile {
 		.given()
 		.contentType(ContentType.JSON)
 		.body(file)
-		.post();
+		.post()
+		.then()
+		.body(JsonSchemaValidator.matchesJsonSchema(new File("./data/ValidateSchema.json")))
+		.extract()
+		.response();
 		
 		post.prettyPrint();
 		

@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="incidentInvidual.LearningBodyAssertion">
+      <class name="runner.RunCreateChangeRequestCucumber">
         <methods>
-          <include name="bodyAssertion"/>
-          <include name="setUp"/>
+          <include name="setUpClass"/>
+          <include name="tearDownClass"/>
+          <include name="runScenario" invocation-numbers="0"/>
         </methods>
-      </class> <!-- incidentInvidual.LearningBodyAssertion -->
+      </class> <!-- runner.RunCreateChangeRequestCucumber -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
